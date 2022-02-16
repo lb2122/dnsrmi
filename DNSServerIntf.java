@@ -1,5 +1,5 @@
-class DNSServerIntf {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
-    }
-}
+import java.rmi.*; 
+public interface DNSServerIntf extends Remote 
+{ 
+	public String DNS(String s1) throws RemoteException; 
+} 
